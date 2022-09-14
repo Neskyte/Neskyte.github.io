@@ -1,0 +1,55 @@
+:host {
+  background: linear-gradient(
+    to right,
+    rgba(32, 0, 121, 0.15),
+    rgba(32, 0, 121, 0.02)
+  );
+  border-bottom: 2px solid #aaa;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  justify-items: center;
+  h3 {
+    flex-basis: 12.5rem;
+    text-align: center;
+    align-self: center;
+    border-right: 2px solid #aaa;
+  }
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+    flex: 1 1;
+    li {
+      flex: 1 1 7.5rem;
+      list-style: none;
+      word-wrap: none;
+      text-align: center;
+    }
+  }
+  h3:hover,
+  li:hover {
+    outline: rgb(114, 114, 234) solid 2px;
+    color: rgb(150, 150, 233);
+    transform: scale(1.05, 1.1);
+    cursor: pointer;
+    border-right: none;
+  }
+  h3,
+  li {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    border-radius: 0.1rem;
+  }
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  span.icon {
+    margin-right: 1rem;
+  }
+}
